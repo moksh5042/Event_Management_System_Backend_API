@@ -20,8 +20,8 @@ A RESTful API built with Django REST Framework for managing events and registrat
 
 1. Clone the repository:
 ```
-git clone https://github.com/moksh5042/Event_Management_System_-Backend_API-.git
-cd Event_Management_System_-Backend_API-
+git clone https://github.com/moksh5042/Event_Management_System_Backend_API.git
+cd Event_Management_System_Backend_API
 ```
 
 2. Create and activate virtual environment:
