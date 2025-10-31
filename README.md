@@ -18,19 +18,45 @@ A RESTful API built with Django REST Framework for managing events and registrat
 
 ## Setup
 
-1. Clone the repository
-2. Install requirements:
+1. Clone the repository:
+```
+git clone https://github.com/moksh5042/Event_Management_System_-Backend_API-.git
+cd Event_Management_System_-Backend_API-
+```
+
+2. Create and activate virtual environment:
+```
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+```
+
+3. Install requirements:
 ```
 pip install -r requirements.txt
 ```
-3. Run migrations:
+
+4. Database Setup:
+   - The project uses SQLite by default
+   - Create a new database and apply migrations:
 ```
+python manage.py makemigrations
 python manage.py migrate
 ```
-4. Start the development server:
+   - Create a superuser (admin):
+```
+python manage.py createsuperuser
+```
+   Follow the prompts to set username, email, and password
+
+5. Start the development server:
 ```
 python manage.py runserver
 ```
+   The API will be available at http://127.0.0.1:8000/
+
+6. Access the admin interface:
+   - Go to http://127.0.0.1:8000/admin
+   - Log in with your superuser credentials
 
 ## API Endpoints
 
